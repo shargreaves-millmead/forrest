@@ -1,4 +1,23 @@
 ---
 label: Company
 hide_body: true
-fields: []
+fields:
+- name: company
+  type: text
+  config:
+    required: false
+  label: Company
+- name: company_logo
+  type: file
+  config:
+    maxSize: 64
+  label: Company Logo
+- name: company_information
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Company Information
